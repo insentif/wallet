@@ -7,6 +7,8 @@ get("https://explorer.avn.network/api/getbalance/?address=RJWkuMKEXxkJTW9fjHjhAJ
 
 function runafterGet(result){
     console.log(result);
-    setInnerText('results',result);
+    setInnerText('timestamp',result.timestamp);
+    setInnerText('address',result.address);
+    setInnerText('balance',result.balance);
 
 }
